@@ -1,0 +1,448 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#141a1f] dark group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex flex-col sm:flex-row items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2b3740] px-4 sm:px-10 py-3 gap-4 sm:gap-0">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z"
+                  fill="currentColor"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-base sm:text-lg font-bold leading-tight tracking-[-0.015em]">Pilgrimage Planner</h2>
+          </div>
+          <div class="flex flex-col sm:flex-row flex-1 justify-end gap-4 sm:gap-8">
+            <div class="flex flex-wrap items-center justify-center sm:justify-end gap-4 sm:gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">Home</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Packages</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Contact</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Pilgrimage Packages</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Successful Trips</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">What's New</a>
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#b2cee5] text-[#141a1f] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Book Now</span>
+              </button>
+              <button
+                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-[#2b3740] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+              >
+                <div class="text-white" data-icon="Globe" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAhbr2fEw7DkLj7hTYrtY9kPDn-lzi4eZWmhwzIu8dR81bsKNbyGrjS7-YJElF7t6z_1iOl0PfTUA1rbPRGPFJuENytfS2HtBLEd_9RVdBkqnqEFx1MCz-cjPvBN66w8y5QlSD6NJBltIQlc53f6Nx-IDGXl1ASgc_KHaPeyE-LdK_rTA7m1wplUUasdjFTIKHrRauyS6G1efAt1g_ELxpE24Pau7K8KU1XZg30PqLLYBnMHT-xqsppxz46Qo0CY9Dzvn4PPoIHMoNL");'
+            ></div>
+          </div>
+        </header>
+        <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsnUITsZ6jKvqdacdRnPsehf4NBdeg-XI7sUdW7Lq7RG1CHpvbFpv-8wP_iJz2jweCGLO5FbGPZaDcsbN7yBYME7ek3eBIfAcLaQ4Bljar_myad0ktcR8FQ-qQyYwgGFCVVNkw8US54GHuH1M8zxWx-NoBligcgO6NPV5NFpy39LK-b5E1d9ylR7ulzMlS-Vwyxz_IsXXVf52mD40WPOboC2QiifBvudE_BGojq3K4VcGCqcY9BQebZC12YnXTq6a71EycTUpAi4qP");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Your Journey to the Sacred Lands
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Plan your Umrah with ease and devotion. We offer comprehensive packages tailored to your needs.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#b2cee5] text-[#141a1f] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Explore Packages</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Packages</h2>
+            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+              <div class="flex items-stretch p-4 gap-3">
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCSDPdeZAml_o-pqmCH7XdCeB2EkD2NW6EjQlo09nTaQnKIaSPWP1xUVNSO5C1uzyoTWzFpKWLv06mEQu0Tnd1XAUi-xmzJbqmWtt3fb8K8LLNtH2yTdZdvMkdMLUBzP0pSWndK-rreyvBJA9anQKcO0UJZNUC43lcBqW5YSm0TYoKLdNTTc7ppKDL0vIn2tapNr24nYHiWnrchoPT23J-AeRTOkBSJ70g7W1L4zaInwglg2h1THVy4By7L-wDv7K7i7ba-8Xisf172");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">7 Nights Umrah Package</p>
+                    <p class="text-[#9dafbe] text-sm font-normal leading-normal">
+                      Experience the spiritual journey with our 7-night package, including flights, accommodation, and guided tours.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtUPZyQ74UIz0nrrcq2d-qTDpE6DGsGmkpkO8ExjlC4TPRCGQ8_iRQDiUupWDYLefY0Fekdc61ccf7CCnEUN7Sbi8s3PJJJjhjsWDn2TKZGL0oobCZWGnh5WKdPnmELbNCsqtUshHGXPrn0fXRldGWiNr6d5-PMG_dCWpY37zkD3e3TgJNjdNraesO5zNR22N64_ZSTdYrrClZlis4-bo4PLuitbuszGeCTEeX-ZPvyhAbQcvbB0UrEEoYvPp80_B4gmDHluEv-hRA");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">10 Nights Umrah Package</p>
+                    <p class="text-[#9dafbe] text-sm font-normal leading-normal">
+                      Extend your devotion with our 10-night package, offering more time for prayers and visits to holy sites.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_DhmwfnWllMYaGKKY1ozIPVQhQtqMcOZp9-TKUpSh9QSeCnKmeDT6U0niprexXJP08HMTvgcb6HeF_rjwCCXazyzEkWX7VXKOuYIAMcdJNj2rqMsM-hLl4f10ZTYJxSQD24ynW-ywM6j5G61Kua98b60h4-lAhFhGHepNhp5-Guc1FWtbX1wtUIjvPlZnC_Q6nASsIUMXmYFAePvxQwHYIJjKkE2_MvM2a-NtL6nUPlbn1OFX9jJbLtCIvfJnJC1ER-DYY1Go6xXj");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Luxury Umrah Experience</p>
+                    <p class="text-[#9dafbe] text-sm font-normal leading-normal">
+                      Indulge in a luxurious Umrah experience with premium accommodations, private transportation, and personalized services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quick Links</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 items-center">
+                <div class="text-white" data-icon="Calendar" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Book Flights</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 items-center">
+                <div class="text-white" data-icon="Bed" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M208,72H24V48A8,8,0,0,0,8,48V208a8,8,0,0,0,16,0V176H232v32a8,8,0,0,0,16,0V112A40,40,0,0,0,208,72ZM24,88H96v72H24Zm88,72V88h96a24,24,0,0,1,24,24v48Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Find Hotels</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 items-center">
+                <div class="text-white" data-icon="Airplane" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M235.58,128.84,160,91.06V48a32,32,0,0,0-64,0V91.06L20.42,128.84A8,8,0,0,0,16,136v32a8,8,0,0,0,9.57,7.84L96,161.76v18.93L82.34,194.34A8,8,0,0,0,80,200v32a8,8,0,0,0,11,7.43l37-14.81,37,14.81A8,8,0,0,0,176,232V200a8,8,0,0,0-2.34-5.66L160,180.69V161.76l70.43,14.08A8,8,0,0,0,240,168V136A8,8,0,0,0,235.58,128.84ZM224,158.24l-70.43-14.08A8,8,0,0,0,144,152v32a8,8,0,0,0,2.34,5.66L160,203.31v16.87l-29-11.61a8,8,0,0,0-5.94,0L96,220.18V203.31l13.66-13.65A8,8,0,0,0,112,184V152a8,8,0,0,0-9.57-7.84L32,158.24v-17.3l75.58-37.78A8,8,0,0,0,112,96V48a16,16,0,0,1,32,0V96a8,8,0,0,0,4.42,7.16L224,140.94Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Visa Assistance</h2>
+              </div>
+              <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 items-center">
+                <div class="text-white" data-icon="IdentificationCard" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M200,112a8,8,0,0,1-8,8H152a8,8,0,0,1,0-16h40A8,8,0,0,1,200,112Zm-8,24H152a8,8,0,0,0,0,16h40a8,8,0,0,0,0-16Zm40-80V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM216,200V56H40V200H216Zm-80.26-34a8,8,0,1,1-15.5,4c-2.63-10.26-13.06-18-24.25-18s-21.61,7.74-24.25,18a8,8,0,1,1-15.5-4,39.84,39.84,0,0,1,17.19-23.34,32,32,0,1,1,45.12,0A39.76,39.76,0,0,1,135.75,166ZM96,136a16,16,0,1,0-16-16A16,16,0,0,0,96,136Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h2 class="text-white text-base font-bold leading-tight">Plan Your Itinerary</h2>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Why Choose Us?</h2>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Your Trusted Partner for Umrah
+                </h1>
+                <p class="text-white text-base font-normal leading-normal max-w-[720px]">
+                  We are committed to providing exceptional service and ensuring a smooth and spiritually fulfilling Umrah experience for all our pilgrims.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 flex-col">
+                  <div class="text-white" data-icon="ShieldCheck" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Trusted &amp; Reliable</h2>
+                    <p class="text-[#9dafbe] text-sm font-normal leading-normal">
+                      We are a trusted Umrah travel agency with years of experience in providing seamless travel arrangements.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 flex-col">
+                  <div class="text-white" data-icon="Headset" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M201.89,54.66A103.43,103.43,0,0,0,128.79,24H128A104,104,0,0,0,24,128v56a24,24,0,0,0,24,24H64a24,24,0,0,0,24-24V144a24,24,0,0,0-24-24H40.36A88.12,88.12,0,0,1,190.54,65.93,87.39,87.39,0,0,1,215.65,120H192a24,24,0,0,0-24,24v40a24,24,0,0,0,24,24h24a24,24,0,0,1-24,24H136a8,8,0,0,0,0,16h56a40,40,0,0,0,40-40V128A103.41,103.41,0,0,0,201.89,54.66ZM64,136a8,8,0,0,1,8,8v40a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V136Zm128,56a8,8,0,0,1-8-8V144a8,8,0,0,1,8-8h24v56Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">24/7 Support</h2>
+                    <p class="text-[#9dafbe] text-sm font-normal leading-normal">
+                      Our dedicated support team is available around the clock to assist you with any queries or concerns.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#3d4e5c] bg-[#1f272e] p-4 flex-col">
+                  <div class="text-white" data-icon="UsersThree" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Group &amp; Family Packages</h2>
+                    <p class="text-[#9dafbe] text-sm font-normal leading-normal">
+                      We offer tailored packages for groups and families, ensuring a comfortable and memorable journey for everyone.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Pilgrimage Packages</h2>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#9dafbe] text-sm font-normal leading-normal">Economy</p>
+                  <p class="text-white text-base font-bold leading-tight">7-Night Budget Umrah</p>
+                  <p class="text-[#9dafbe] text-sm font-normal leading-normal">Affordable 7-night package with essential services, ideal for budget-conscious travelers.</p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB75Sjygy0EHDuD7hWjGCaYGM_nK4-SrE3TlyANHYnDVepvdAlgLiFjo34i0NYNFeY_qN-skVWhlEnxrHEovUyIEQ2nKZ8yW-Wy_5cekEQ5tjxrj1FValErLGaXcLjZy5sYfoJjkFeM9nd6tEzFmnQs720_r7oRifnd19JaltJal7bG7-fXjVpvkVpRODWGtAjcdEh1Soo7xUkegZPwLBaolJmKf61AzoV6jWyREa_-stKaiaKEGDxxBbmaaskHqAw2OrEv_5WLEkx3");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#9dafbe] text-sm font-normal leading-normal">Standard</p>
+                  <p class="text-white text-base font-bold leading-tight">10-Night Standard Umrah</p>
+                  <p class="text-[#9dafbe] text-sm font-normal leading-normal">Comfortable 10-night package with enhanced accommodations and guided tours.</p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCeBAxHHPvHWrUmxezXV_-O_fdI6pxP1MxzxWt0xPCbWYefILjkRX0UEncz6sGD9oE9ROUKBgHAfoehxuyO101PElHB161HL_GaJchH-B-UvWQLiyv_aVzRNiJMRgx0O4DZuYtxLprG2rDm5KWBCKMfxhcfB1tfhdsG0KmJ_CgGjj4JDXytQAqBKWF5zoBPEsrxQ8-VCdQbtpUdNPDS76yWGzgQc8v8IeTa0LoVGf6W27-LonPqBKIe0etSmJ0fiBJc7fTpPr74Uv_Y");'
+                ></div>
+              </div>
+            </div>
+            <div class="p-4">
+              <div class="flex items-stretch justify-between gap-4 rounded-xl">
+                <div class="flex flex-col gap-1 flex-[2_2_0px]">
+                  <p class="text-[#9dafbe] text-sm font-normal leading-normal">Luxury</p>
+                  <p class="text-white text-base font-bold leading-tight">14-Night Premium Umrah</p>
+                  <p class="text-[#9dafbe] text-sm font-normal leading-normal">Luxurious 14-night package with premium hotels, private transport, and personalized services.</p>
+                </div>
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBnaPn4XxKZn13vSfvgC2jpsuygFcxszqeg7iKrItIesCOAy9y7taeke2hYBmMcZa6ipYXiyNZ0ePzIo_-0NELsAi67Htu4yBeYiQNRGRTCHUE98qr6GMdIsAeEsofIfbbqeu0iK_ESGyHh67Y0v8VxG8eYb2iXv2aq0UNMpO1R6gal2vxDH4RUnQAo3PAZY8WGqyo5s3JhKdS9EmhweyRozAFxuiPz7RWrkEXWLrYFgfKHyh4k4r7FooK4CCu0P4INV81ZBtxL-N4B");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Successful Trips</h2>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Images and Moments</h3>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5nl3juhMLyPSQ9EcxzkvUuyrdzY1yJfPKM-te2CoDmtliPow3UpD-jQXOMgNiBrK-FKXvI_Tq_gN1wgkIh2MvIlhoFpmqyq38hjNXpk9oAw9N3J9UL74szigX8QPNXGzil-HjY_sZw9IVmSko-DUPdfK6lkGfxH14tjXkHiA1gnGXnUx8zvBoUBiwFPS7sgnjkSdir_ACeFLGYV4lxAPuJjO0zZSGcDa0HXZaL9Z8UwJhsqCUz8wJf2V8rbit-yNgUTrjr_SS2rMl");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Pilgrims at the Kaaba</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRCTM9-XlcJetratgRjVJyMRMoSgb60-fhKjK6StdewOz1mm4JLDfBNwvxW_p8QF7X-C1wVXBCGjfANSh1-hJvsuh307xr1KjWznGo6EeeMmRIf5Lokk613QHGmk17ub5Dtg6aDqMMi7BelvEorugIGWuFj_2Hq9xYz3FzEIGB4sk6CeX0OLzIqwDQzHjc4Ab5vWvdBUnXxiWZFiCQN9uKAYoeFrKO0hcaVZERclka34UQNQ96-cip_7YXOa2vXOnLpW-X-ZHNd7G1");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Sunset over Medina</p>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCPRm5bpDbNrmLw14zks4XcujEhd0__ISBIPITDdugrz06I4zztrBErl1p1dZQgEmf4vuQHm-wpoXAoDJeIS2QPkWDtVaWpn-XOZKB6cila9tBGF6apLcLFquVY-Euo-MqOYFOV378CtNxhqvqmJSEqtwpT0J3BxLOXorwswFaD-k7566dyEDnHYrT4_cScAsavM04us0-pvFkQixibDmidW9Ahv-zzZTCvfI-lqTrezQxMfgYiIdPzrbYVqB2vFTmlqW0zFjGueZQQ");'
+                ></div>
+                <p class="text-white text-base font-medium leading-normal">Group prayer in Mecca</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">What's New</h2>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGT5JLy8Kdc298S7oL635E8cCEtcN4Uu94xkUe6UgrFeEEXzAfP-5jvGTDLrDT3oq8fjuypcZA3Jq5rwdQ5iooMGSodLJJRu43D6nkl-AhHFh7aF0YJqAku2GVttbWL0M3_JbyFeLyjx3gRB9hzqHQzlHq5N_dOZdPOBUikAU5m4vjyM9UUl_qjy60ywIEABzCkWN8HnBnMXefAm-fvJ_0tMxRqVEsihgsZ6l8AvLzkhduDENR7Nwopw-_o_AL9-ouVB7Y4kNcurDm");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Introducing Our New 12-Night Extended Umrah Package</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#9dafbe] text-base font-normal leading-normal">
+                      Explore our new 12-night package, offering a more immersive experience with additional visits to historical sites and extended prayer times.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9m7ySdIac2jmkVPd6FxtJDTgMJOjfZForroQCNNA7CwgnaA4PvgGwtMXdEzI09Q-XGXYrngYFZcr1LTXPVg6Ib8A29WVyvoyvI3utvK6W1xcBbSNzvQyRAAmVBggwo7bzBPAR6OViH--fAQlyurPMhULMrI00uXcZkyQyBEXqc0rIWpJjlTM_W28kLpX9p9tC3vrxUYOQzNSKFFn3xT7OrN3bYSCnK7Maw9rI9Lq-sEPzXvu_cO3hFF3JLfTEi-oAf5QxCDLdo0xS");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Special Offer: Early Bird Discount</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#9dafbe] text-base font-normal leading-normal">
+                      Book your Umrah package before July 31st and receive a 15% discount on all packages. Limited time offer!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 @container">
+              <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-02_VPhN6L7Sz8PKAJiW6ozjujum_pF0PZw2kFC6YbdbBdUFV8rVWJTK1AXm3CvvVOyCMbv1ap4VQ3Hj6dtTL2Y1DIZhT2h_7-ztgODqAbr6i3xp56OhmSB5l-Lo0ox3TSB4Q91Sn20BWwxiBkyGbN8XTVH6gIt4rs7w3zX2M0j0zNhmRIWegt6W8TGE-2QqvOsp5IYDKuam51Z3PTsUTRdJPAfe_VbdTy4G5y5PnJut6QLawlxemEqBBHE645wSXZJkpVwz5dAGd");'
+                ></div>
+                <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+                  <p class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Enhanced Platform Features</p>
+                  <div class="flex items-end gap-3 justify-between">
+                    <p class="text-[#9dafbe] text-base font-normal leading-normal">
+                      We've updated our platform with new features to make planning your Umrah even easier. Check out our improved itinerary builder and real-time support chat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex flex-col sm:flex-row justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">How to Contact Us</h2>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Your Name</p>
+                <input
+                  placeholder="Enter your name"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#3d4e5c] bg-[#1f272e] focus:border-[#3d4e5c] h-14 placeholder:text-[#9dafbe] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Your Email</p>
+                <input
+                  placeholder="Enter your email"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#3d4e5c] bg-[#1f272e] focus:border-[#3d4e5c] h-14 placeholder:text-[#9dafbe] p-[15px] text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Your Message</p>
+                <textarea
+                  placeholder="Type your message here"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-white focus:outline-0 focus:ring-0 border border-[#3d4e5c] bg-[#1f272e] focus:border-[#3d4e5c] min-h-36 placeholder:text-[#9dafbe] p-[15px] text-base font-normal leading-normal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#b2cee5] text-[#141a1f] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Submit</span>
+              </button>
+            </div>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              For immediate assistance, call us at +1-555-123-4567. Our phone support is available from 9 AM to 5 PM (EST), Monday to Friday. You can also reach us via email at
+              support@pilgrimageplanner.com. We aim to respond to all email inquiries within 24 hours. Our physical address is 123 Pilgrimage Way, Anytown, USA. Please note that
+              visits are by appointment only.
+            </p>
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#9dafbe] text-base font-normal leading-normal min-w-40" href="#">About Us</a>
+                <a class="text-[#9dafbe] text-base font-normal leading-normal min-w-40" href="#">Contact</a>
+                <a class="text-[#9dafbe] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#9dafbe] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#9dafbe]" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9dafbe]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9dafbe]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#9dafbe] text-base font-normal leading-normal">© 2024 Pilgrimage Planner. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
